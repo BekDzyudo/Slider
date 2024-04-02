@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Accardion -->
+
+    <div class="accardion">
+      <button class="btn">bo'lim1</button>
+      <p class="disc">Lorem ipsum dolor sit amet.</p>
+      <button class="btn">bo'lim2</button>
+      <p class="disc">Lorem ipsum dolor sit amet.</p>
+      <button class="btn">bo'lim3</button>
+      <p class="disc">Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <!-- ============================================= -->
+
+    <!-- slider -->
+
+    <hr>
+    <div class="slider-content">
+      <div class="myslider">
+        <p class="text">1/3</p>
+        <img src="img/mountain.jpg" alt="" />
+        <h1>Birinchi slider</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="myslider">
+        <p class="text">2/3</p>
+        <img src="img/Nyu York.jpg" alt="" />
+        <h1>Ikkinchi slider</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="myslider">
+        <p class="text">3/3</p>
+        <img src="img/ummon.jpg" alt="" />
+        <h1>Uchinchi slider</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+     
+        <a class="prev" onclick="nextprev(-1)">&#10094</a>
+        <a class="next" onclick="nextprev(1)">&#10095</a>
+     
+      <div style="text-align: center">
+        <div onclick="nextnew(1)" class="dot active"></div>
+        <div onclick="nextnew(2)" class="dot"></div>
+        <div onclick="nextnew(3)" class="dot"></div>
+      </div>
+    </div><hr>
+    <!-- ============================================ -->
+
+    <!-- modal -->
+
+    <div class="modal-content">
+      <button onclick="modal()">showModal</button>
+      <div class="my-modal">
+        <h1>sarlavha</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, exercitationem ex? Sapiente, aspernatur dicta eius commodi vitae alias quam doloribus fuga. Odio tenetur quibusdam vel eum dignissimos aspernatur eaque quaerat? Expedita, exercitationem ex? Sapiente, aspernatur dicta eius commodi vitae alias quam doloribus fuga. Odio tenetur quibusdam vel eum dignissimos aspernatur eaque quaerat?</p>
+        <button onclick="close1()" class="close">close</button>
+      </div>
+    </div>
+    <!-- =============================================== -->
+
+    <!-- range -->
+
+    <form action="">
+      <input type="range" min="0" max="100" class="vil1" value="0">
+      <input type="text" value="0" class="vil11"><br>
+      <input type="range" min="0" max="100" class="vil2" value="0">
+      <input type="text" value="0" class="vil22"><br>
+      <input type="range" min="0" max="100" class="vil3" value="0">
+      <input type="text" value="0" class="vil33"><br>
+      <input type="range" min="0" max="100" class="vil4" value="0">
+      <input type="text" value="0" class="vil44">
+    </form>
+    <!-- ==================================================== -->
+
+    <!-- form-slider -->
+
+    <div class="block">
+      <form class="myform" id="formblock" action="">
+        <label for="fio">fio</label>
+        <input type="text" id="fio"><br><br>
+        <label for="age">age</label>
+        <input type="number" id="age"><br><br>
+        <label for="email">email</label>
+        <input type="email" id="email"><br><br>
+        <input type="button" value="natija" onclick="formnat()" >
+      </form>
+      <div class="javob">
+        <h3 id="jfio"></h3>
+        <h3 id="jage"></h3>
+        <h3 id="jemail"></h3>
+        <button id="close" onclick="close2()">close</button>
+      </div>
+    </div>
+    <!-- ================================================= -->
+
+    <!-- kalit so'zlar ?????????? -->
+    <form action="">
+      <input type="text" id="text">
+      <input type="button" value="ok">
+    </form>
+    <h1 id="h1"></h1>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
